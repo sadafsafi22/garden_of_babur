@@ -51,3 +51,43 @@ h1 , h2 {
 .active{
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* main image */
+
+#main-outer{
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+#main-image{
+    background: url('../images/main-page-image.jpg') no-repeat center center;
+    height: 600px;
+    width: 100%;
+}
+
+#main-image-text, #main-image-text h2{
+    color:#fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#main-image-text{
+    font-size: 100%;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    width:451px;
+    height: 124px;
+    position: absolute;
+    padding: 9px;
+    background-color: rgba(26, 219 , 145, 0.6);
+    top: 80px;
+    right: 50px;
+    text-align: justify;
+}
+
+#main-image-text hr{
+    border-top: 1px solid #2c6608;
+    padding: 7px;
+    width: 97%;
+}
