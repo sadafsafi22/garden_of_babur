@@ -244,3 +244,10 @@ footer{
     margin-top: 10px;
     color:black;
 }
+
+.park-hourse hr{
+    border-bottom: 1px solid black;
+    width: 98%;
+    margin: 0 auto;
+    
+}
