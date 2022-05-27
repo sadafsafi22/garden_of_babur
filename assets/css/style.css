@@ -536,6 +536,14 @@ footer{
 @media screen and (max-width: 600px) {
     #main-image-text{
         right: 5px;
+        width:95%;
+        height: auto;
+    }
+    #main-image-text h2{
+        font-size: 120%;
+    }
+    #main-image-text h3{
+        font-size: 100%;
     }
     #menu{
         padding: 5px;
@@ -632,6 +640,7 @@ footer{
     
     #logo{
         font-size: 160%;
+        padding-left: 0;
     }
     #menu, #logo {
         line-height: 42px;
@@ -640,14 +649,17 @@ footer{
         padding: 4px;
     }
     #menu li{
-        margin-right: 17px;
+        margin-right: 7px;
     }
     #main-image-text{
         right: 2px;
         width:94%
     }
     #main-image-text h2{
-        font-size: 110%;
+        font-size: 95%;
+    }
+    #main-image-text h3{
+        font-size: 95%;
     }
     #section-content {
         height: 1050px;
@@ -670,6 +682,44 @@ footer{
         width:95%;
     }
 
+    /* ticket page style*/
+    .park-hourse{
+        margin-top: 2%;
+        right:0;
+        width:317px;
+    }
+    .park-hourse h2, .park-ticket-form h2{
+        font-size: 100%;
+    }
+    .park-hourse h3{
+        font-size: 80%;
+    }
+    .park-ticket-form{
+        width:298px;
+        margin-top: 24%;
+        right:0;
+    }
+    .park-ticket-form label {
+        font-size: 90%;
+    }
+    .submit-button{
+        width:170px;
+        font-size: 100%;
+        height:23px;
+    }
+
+    /* Contact page style */
+
+    #contact-form h3{
+        font-size: 225%;
+    }
+    #contact-form h4{
+        font-size: 109%;
+    }
+
+
+
+    /* Footer style*/
     footer{
         bottom: 0;
         right: 0;
