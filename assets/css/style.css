@@ -449,3 +449,32 @@ footer{
     }
     
 }
+
+@media screen and (max-width: 380px) {
+    
+    #logo{
+        font-size: 160%;
+    }
+    #menu, #logo {
+        line-height: 42px;
+    }
+    #menu{
+        padding: 5px;
+    }
+    #menu li{
+        margin-right: 19px;
+    }
+    #main-image-text{
+        right: 2px;
+        width:94%
+    }
+    #main-image-text h2{
+        font-size: 110%;
+    }
+    #section-content {
+        height: 1050px;
+        right:0;
+    }
+    
+
+}
