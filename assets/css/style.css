@@ -552,7 +552,7 @@ footer{
         margin-right: 19px;
     }
     #section-content{
-        height: 1120px;
+        height: auto;
     }
     #section-content div{
         clear:both;
@@ -662,7 +662,7 @@ footer{
         font-size: 95%;
     }
     #section-content {
-        height: 1050px;
+        height: auto;
         right:0;
     }
     
