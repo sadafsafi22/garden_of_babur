@@ -9,12 +9,14 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     color: #3a3a3b;
-    font-weight: 300;
+    word-spacing: 4px;
 }
 
-header{
-    height: 10%;
+header {
+    width: 100%;
+    height: 10vh;
 }
+
 /* heading and logo */
 h1,
 h2 {
@@ -34,7 +36,7 @@ h2 {
 
 /* Navigation and menu */
 #menu {
-    font-size: 115%;
+    font-size: 1.3em;
     letter-spacing: 3px;
 }
 
@@ -84,17 +86,23 @@ h2 {
 }
 
 #main-image-text {
-    font-size: 100%;
     text-transform: capitalize;
     letter-spacing: 4px;
     width: 451px;
-    height: 124px;
+    height: auto;
     position: absolute;
     padding: 9px;
     background-color: rgba(251, 245, 193, 0.8);
     top: 80px;
     right: 50px;
-    text-align: justify;
+}
+
+#main-image-text h2 {
+    font-size: 1.4em;
+}
+
+#main-image-text h3 {
+    font-size: 1em;
 }
 
 #main-image-text hr {
@@ -107,40 +115,45 @@ h2 {
 
 #section-content {
     text-align: center;
-    margin-top:8px;
+    margin-top: 8px;
 }
 
-#section-content p{
+#section-content p {
     font-size: 1.5em;
     letter-spacing: 2px;
     padding: 35px;
-    color: #2c6608;
+    color: #367e0a;
     background-color: rgb(255 252 207);
+    text-align: justify;
+    word-spacing: 0px;
 }
 
 /* add flex style to the images in the index.html*/
 
-#gallery{
+#gallery {
     display: flex;
     margin-bottom: 5px;
 }
-.image-box{
+
+.image-box {
     flex: 1;
 }
-.image-box img{
+
+.image-box img {
     height: 80%;
-    width:90%;
+    width: 90%;
     border-radius: 20px;
     padding-top: 5px;
 }
-.image-box h2{
+
+.image-box h2 {
     font-size: 1.8em;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 
 /* footer style */
-footer{
+footer {
     height: 150px;
     text-align: center;
     background-color: #010c01;
@@ -152,18 +165,58 @@ footer{
     text-align: center;
 }
 
-.footer-social-links > li {
+.footer-social-links>li {
     display: inline;
 }
-.footer-social-links i{
+
+.footer-social-links i {
     font-size: 160%;
     padding: 60px;
-    color:white;
+    color: white;
 }
 
 
 /* history. hmtl styles*/
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height:auto;
+}
+.frist-div, .third-div{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+  }
+  .second-div{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+  }
+
+.container div {
+    flex:1;
+}
+#first-img, #third-img, #second-img{
+     flex: 0 1 25%;
+}
+.frist-div img, .third-div img, .second-div img{
+    width:100%;
+}
+.frist-div p, .third-div p{
+    padding-left: 15px;
+    font-size: 1.6em;
+    text-align: justify;
+    word-spacing: 2px
+}
+.second-div p{
+    padding-right: 15px;
+    font-size: 1.6em;
+    text-align: justify;
+    word-spacing: 2px
+}
+/*
 .history-content{
     width: 100%;
     height: auto;
@@ -204,7 +257,7 @@ footer{
 
 
 
-/* old content style
+ old content style
 
 .history-content{
     height: 600px;
@@ -268,10 +321,10 @@ footer{
     height: 600px;
 }
 
-.park-hourse{
-    margin:0 auto;
+.park-hourse {
+    margin: 3px auto;
     margin-top: 5%;
-    background-color: rgba(130, 104, 91,0.9);
+    background-color: rgba(243, 243, 243, 0.8);
     width: 800px;
     position: absolute;
     right: 30%;
@@ -281,17 +334,18 @@ footer{
 }
 
 .park-hourse h2 {
-    color:black;
-    font-size: 200%;
+    color: black;
+    font-size: 1.9em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .park-hourse span {
     display: inline-block;
     width: 30%;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
     margin-top: 10px;
-    color:black;
+    color: black;
 }
 
 
@@ -299,10 +353,10 @@ footer{
 
 .park-ticket-form {
 
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 12%;
-    background-color: rgba(130, 104, 91,0.9);
-    max-width: 400px;
+    background-color: rgba(243, 243, 243, 0.8);
+    width: 400px;
     position: absolute;
     right: 32%;
     border-radius: 5px;
@@ -311,27 +365,33 @@ footer{
     color: black;
     padding: 10px;
 }
+.park-ticket-form h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 .park-ticket-form input {
     display: block;
     width: 100%;
     background: transparent;
-    border:1px solid white;
+    border: 1px solid white;
     height: 25px;
     margin: 5px 0 20px 0;
     border-radius: 5px;
 }
-.park-ticket-form input:hover, .park-ticket-form input:focus {
-    border-color:red;
+
+.park-ticket-form input:hover,
+.park-ticket-form input:focus {
+    border-color: red;
 }
-.park-ticket-form label{
-    float:left;
+
+.park-ticket-form label {
+    float: left;
     font-size: 120%;
     font-weight: bold;
 }
 
 .submit-button {
-    color:black;
+    color: black;
     background-color: #fff;
     width: 190px;
     height: 30px;
@@ -341,8 +401,9 @@ footer{
     padding: 2px;
 
 }
+
 .submit-button:hover {
-    color:white;
+    color: white;
     background-color: black;
     border: 1px solid white;
 }
@@ -350,71 +411,77 @@ footer{
 
 /*contact page css*/
 
-#contact-main-section{
-    height: 600px;
+#contact-main-section {
+    height: auto;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
 #contact-map {
-    height:500px;
-    width:49%;
-    float:left;
-    margin-left: 10px;
-    
+    height: 500px;
+    width: 49%;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
 }
 
-#contact-map iframe{
+#contact-map iframe {
     width: 100%;
     height: 100%;
-    border-radius:0 5px 0 5px;
+    border-radius: 0 5px 0 5px;
 }
 
 #contact-form {
-    height:500px;
-    width:49%;
-    float:right;
-    margin-right: 10px;
+    height: 500px;
+    width: 49%;
+    float: left;
+    margin-left: 10px;
     background-color: #F3F3F3;
     text-align: center;
 }
 
-#contact-form h3, h4 {
+#contact-form h3,
+h4 {
     text-align: center;
-    color:black;
+    color: black;
 }
 
-#contact-form h3{
-    font-size: 320%;;
+#contact-form h3 {
+    font-size: 320%;
     padding-top: 20px;
     padding-bottom: 20px;
     letter-spacing: 0;
 }
 
-#contact-form h4{
+#contact-form h4 {
     font-size: 150%;
     padding-bottom: 15px;
 }
 
-.input-inline-style, .input-block-style {
+.input-inline-style,
+.input-block-style {
 
     height: 40px;
     margin: 5px;
     padding: 8px;
 }
-.input-inline-style{
+
+.input-inline-style {
     width: 38%;
 }
-.input-block-style{
+
+.input-block-style {
     width: 80%;
 }
 
-#contact-form input:focus, #contact-form textarea:focus{
+#contact-form input:focus,
+#contact-form textarea:focus {
     outline: none;
 }
 
-.input-textarea-style{
+.input-textarea-style {
     margin: 5px;
     padding: 8px;
     width: 80%;
@@ -429,183 +496,225 @@ footer{
     border-radius: 5px;
     font-size: 120%;
     padding: 2px;
-    color:white;
-    
+    color: white;
 }
 
 @media screen and (max-width: 1200px) {
 
-    .park-hourse{
+    .park-hourse {
         margin-top: 3%;
-        right:10%
+        right: 10%
     }
-    .park-ticket-form{
+
+    .park-ticket-form {
         margin-top: 15%;
 
     }
 
     /* Contact.html Css*/
-    #contact-main-section{
+    #contact-main-section {
         height: auto;
         margin: 0 auto;
-    }    
-    #contact-map{
-        float:none;
-        margin:0 auto;
-        width:90%
     }
-    #contact-form{
-        width: 90%;
-        
+
+    #contact-map {
         float: none;
-        margin:10px auto;
+        margin: 0 auto;
+        width: 90%
+    }
+
+    #contact-form {
+        width: 90%;
+
+        float: none;
+        margin: 10px auto;
         padding: 40px;
     }
 }
 
 
-@media screen and (max-width: 900px){
-    
-    header a{
+@media screen and (max-width: 900px) {
+
+    header a {
         text-decoration: none;
         text-align: center;
         padding-top: 5px;
     }
-    #logo{
+
+    #logo {
         float: none;
-        font-size: 227%;
-    }
-    #menu{
-        clear:left;
-        float:left;
-        padding-left: 17px;
+        font-size: 2.5em;
     }
 
-    #menu, #logo {
+    #menu {
+        clear: left;
+        float: left;
+        padding-left: 17px;
+        font-size: 1.1em;
+    }
+
+
+    #menu,
+    #logo {
         line-height: 58px;
     }
 
-    #section-content p{
+    #section-content p {
         font-size: 1.5em;
-        padding: 25px;
+        padding: 18px;
     }
 
-    #history-content-frist,#history-content-second{
+    #history-content-frist,
+    #history-content-second {
         margin: 2px 0 2px 0;
     }
-    #history-content-frist img , #history-content-second img,
-    #history-content-frist p , #history-content-second p 
-     {
-        float:none;
-    }
-    #history-content-frist img , #history-content-second img{
-        width:50%
+
+    #history-content-frist img,
+    #history-content-second img,
+    #history-content-frist p,
+    #history-content-second p {
+        float: none;
     }
 
-    #history-content-frist p , #history-content-second p {
-        width:95%;
+    #history-content-frist img,
+    #history-content-second img {
+        width: 50%
     }
-    
-    .park-hourse{
+
+    #history-content-frist p,
+    #history-content-second p {
+        width: 95%;
+    }
+
+    .park-hourse {
         margin-top: 2%;
-        right:6%;
-        width:500px;
+        right: 6%;
+        width: 500px;
     }
-    .park-hourse h2{
+
+    .park-hourse h2 {
         font-size: 170%;
     }
-    .park-hourse h3{
+
+    .park-hourse h3 {
         font-size: 100%;
     }
-    .park-ticket-form{
+
+    .park-ticket-form {
         margin-top: 15%;
-        right:11%;
+        right: 11%;
     }
 }
 
 @media screen and (max-width:780px) {
-    #gallery{
+    #gallery {
         flex-direction: column;
+    }
+
+    .image-box img {
+        height: 70%;
+        width: 80%;
+    }
+
+
+    .frist-div, .third-div, .second-div{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .frist-div p, .third-div p, .second-div p{
+        word-spacing: 2px;
+    }
+    .frist-div img, .third-div img, .second-div img{
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #main-image-text{
+
+    #logo {
+        font-size: 1.8em;
+    }
+
+    #main-image-text {
         right: 5px;
-        width:95%;
+        width: 95%;
         height: auto;
     }
-    #main-image-text h2{
-        font-size: 120%;
+
+    #main-image-text h2 {
+        font-size: 1.1em;
     }
-    #main-image-text h3{
-        font-size: 100%;
+
+    #main-image-text h3 {
+        font-size: 1em;
     }
-    #menu{
+
+    #menu {
         padding: 5px;
     }
-    #menu li{
+
+    #menu li {
         margin-right: 19px;
     }
-    #section-content{
+
+    #section-content {
         height: auto;
     }
-   
-    footer {
-        height:80px;
+
+    .image-box h2 {
+        font-size: 1.2em;
     }
-    .footer-social-links i{
+
+
+    footer {
+        height: 80px;
+    }
+
+    .footer-social-links i {
         font-size: 130%;
         padding: 20px;
-        color:white;
-    }
-    
-    #history-content-frist,#history-content-second{
-        margin: 2px 0 2px 0;
-    }
-    #history-content-frist img , #history-content-second img,
-    #history-content-frist p , #history-content-second p 
-     {
-        float:none;
-    }
-    #history-content-frist img , #history-content-second img{
-        width:50%
+        color: white;
     }
 
-    #history-content-frist p , #history-content-second p {
-        width:95%;
-    }
-
-    .park-hourse{
+   /*Ticket page */
+    .park-hourse {
         margin-top: 2%;
-        right:3%;
-        width:360px;
+        right: 3%;
+        width: 360px;
     }
-    .park-hourse h2, .park-ticket-form h2{
+
+    .park-hourse h2,
+    .park-ticket-form h2 {
         font-size: 120%;
     }
-    .park-hourse h3{
+
+    .park-hourse h3 {
         font-size: 80%;
     }
-    .park-ticket-form{
-        width:347px;
+
+    .park-ticket-form {
+        width: 347px;
         margin-top: 18%;
-        right:3%;
+        right: 3%;
     }
+
     .park-ticket-form label {
         font-size: 100%;
     }
-    .submit-button{
-        width:170px;
+
+    .submit-button {
+        width: 170px;
         font-size: 100%;
-        height:23px;
+        height: 23px;
     }
 
 
     /*Contact.html map and contact form*/
 
-    #contact-form{
-        padding: 25px;;
+    #contact-form {
+        padding: 25px;
+        ;
     }
 
     #contact-form h3 {
@@ -613,97 +722,100 @@ footer{
         padding-top: 0px;
         padding-bottom: 16px;
     }
+
     #contact-form h4 {
         font-size: 136%;
         padding-bottom: 11px;
     }
 
-    .input-inline-style{
-        width:80%;
+    .input-inline-style {
+        width: 80%;
     }
 
 }
 
 @media screen and (max-width: 380px) {
-    
-    #logo{
-        font-size: 160%;
+
+    #logo {
+        font-size: 1.6em;
         padding-left: 0;
     }
-    #menu, #logo {
+
+    #menu,
+    #logo {
         line-height: 42px;
     }
-    #menu{
+
+    #menu {
         padding: 4px;
-    }
-    #menu li{
-        margin-right: 7px;
-    }
-    #main-image-text{
-        right: 2px;
-        width:94%
-    }
-    #main-image-text h2{
-        font-size: 95%;
-    }
-    #main-image-text h3{
-        font-size: 95%;
-    }
-    
-    
-    #history-content-frist,#history-content-second{
-        margin: 2px 0 2px 0;
-    }
-    #history-content-frist img , #history-content-second img,
-    #history-content-frist p , #history-content-second p 
-     {
-        float:none;
-    }
-    #history-content-frist img , #history-content-second img{
-        width:50%
+        font-size: 1em;
     }
 
-    #history-content-frist p , #history-content-second p {
-        width:95%;
+    #menu li {
+        margin-right: 7px;
+    }
+
+    #main-image-text {
+        right: 2px;
+        width: 94%
+    }
+
+    #main-image-text h2 {
+        font-size: 0.9em;
+    }
+
+    #main-image-text h3 {
+        font-size: 0.7em;
+    }
+
+    .image-box h2 {
+        font-size: 1.2em;
     }
 
     /* ticket page style*/
-    .park-hourse{
+    .park-hourse {
         margin-top: 2%;
-        right:0;
-        width:317px;
+        right: 0;
+        width: 317px;
     }
-    .park-hourse h2, .park-ticket-form h2{
+
+    .park-hourse h2,
+    .park-ticket-form h2 {
         font-size: 100%;
     }
-    .park-hourse h3{
+
+    .park-hourse h3 {
         font-size: 80%;
     }
-    .park-ticket-form{
-        width:298px;
+
+    .park-ticket-form {
+        width: 298px;
         margin-top: 24%;
-        right:0;
+        right: 0;
     }
+
     .park-ticket-form label {
         font-size: 90%;
     }
-    .submit-button{
-        width:170px;
+
+    .submit-button {
+        width: 170px;
         font-size: 100%;
-        height:23px;
+        height: 23px;
     }
 
     /* Contact page style */
 
-    #contact-form h3{
+    #contact-form h3 {
         font-size: 225%;
     }
-    #contact-form h4{
+
+    #contact-form h4 {
         font-size: 109%;
     }
 
     /* Footer style*/
-    footer{
+    footer {
         bottom: 0;
         right: 0;
     }
