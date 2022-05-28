@@ -12,6 +12,9 @@ body {
     font-weight: 300;
 }
 
+header{
+    height: 10%;
+}
 /* heading and logo */
 h1,
 h2 {
@@ -22,11 +25,10 @@ h2 {
 }
 
 #logo {
-    font-size: 280%;
+    font-size: 2.5em;
     text-transform: uppercase;
     padding-left: 20px;
     padding-top: 2px;
-    font-weight: 300px;
     float: left;
 }
 
@@ -108,40 +110,36 @@ h2 {
     margin-top:8px;
 }
 
-
-#section-content h2 {
-    font-size:200%;
-}
- #section-content h2 {
-    font-family: 'Josefin Sans', sans-serif;
-}
 #section-content p{
-    font-size: 220%;
+    font-size: 1.5em;
     letter-spacing: 2px;
-    text-align: justify;
     padding: 35px;
+    color: #2c6608;
+    background-color: rgb(255 252 207);
 }
-#section-content img {
+
+/* add flex style to the images in the index.html*/
+
+#gallery{
+    display: flex;
+    margin-bottom: 5px;
+}
+.image-box{
+    flex: 1;
+}
+.image-box img{
+    height: 80%;
     width:90%;
     border-radius: 20px;
     padding-top: 5px;
 }
-
-#left-content {
-    width:33%;
-    float:left;
+.image-box h2{
+    font-size: 1.8em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-#center-content {
-    width:33%;
-    margin: 0 auto;
-}
 
-#right-content {
-    float:right;
-    width:33%;
-}
-
+/* footer style */
 footer{
     height: 150px;
     text-align: center;
@@ -463,8 +461,6 @@ footer{
         margin:10px auto;
         padding: 40px;
     }
-
-
 }
 
 
@@ -490,14 +486,8 @@ footer{
     }
 
     #section-content p{
-        font-size: 160%;
-        text-align: justify;
+        font-size: 1.5em;
         padding: 25px;
-    }
-
-    #section-content h2{
-        font-size: 140%;
-        font-weight: bold;
     }
 
     #history-content-frist,#history-content-second{
@@ -533,6 +523,12 @@ footer{
     }
 }
 
+@media screen and (max-width:780px) {
+    #gallery{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #main-image-text{
         right: 5px;
@@ -554,15 +550,7 @@ footer{
     #section-content{
         height: auto;
     }
-    #section-content div{
-        clear:both;
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-    #left-content,#center-content,#right-content {
-        width:65%;
-    }
+   
     footer {
         height:80px;
     }
@@ -661,10 +649,7 @@ footer{
     #main-image-text h3{
         font-size: 95%;
     }
-    #section-content {
-        height: auto;
-        right:0;
-    }
+    
     
     #history-content-frist,#history-content-second{
         margin: 2px 0 2px 0;
@@ -716,8 +701,6 @@ footer{
     #contact-form h4{
         font-size: 109%;
     }
-
-
 
     /* Footer style*/
     footer{
