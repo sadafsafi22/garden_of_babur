@@ -31,9 +31,9 @@ Babur garden is an historical and recreational garden which is located in Kabul 
 ![this image show history ](assets/images/history.JPG)
 
 * Ticket Page
-    - This section include a form which help users to check for the opening & closing time of the garden and also help them to book their ticket online this feature help them to specify their visit time from the garden, safe their time which they don’t go to the garden in close time and enjoy their visit and it also help, This section will be updated as these times change to keep the user up to date.
+    - This section has a form which help visitors to book their ticket online this feature help them to specify their visit time from the garden, safe their time which they don’t go to the garden in close time and enjoy their visit and it also help, This section will be updated as these times change to keep the user up to date.
 
-![this image show ticket page ](assets/images/ticket.JPG)
+![this image show ticket page ](assets/images/ticket1.JPG)
 
 * Contact Page
     - This section has two part first contact and second is map.
